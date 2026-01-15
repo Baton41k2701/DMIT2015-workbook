@@ -17,6 +17,34 @@ public class Circle {
     }
 
     public void setRadius(double radius) {
+        if (radius <= 0) {
+            throw  new IllegalArgumentException("Radius must be greater than 0");
+        }
         this.radius = radius;
     }
+
+    public Circle () {
+        setRadius(1.0);
+    }
+
+    public Circle (double radius)
+    {
+        setRadius(radius);
+    }
+
+    public  double getArea()
+    {
+        return Math.PI * radius * radius;
+    }
+
+    public double getDiameter()
+    {
+        return 2 * radius;
+    }
+
+    public  double getPerimeter()
+    {
+        return 2 * Math.PI * radius;
+    }
+
 }
