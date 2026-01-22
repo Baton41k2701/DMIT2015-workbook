@@ -1,5 +1,12 @@
 package dmit2015.console;
 
+/**
+ * This class models a Rectangle shape.
+ *
+ * @author Nazar Bilinskyi
+ * @version 2026.01.16
+ */
+
 public class Rectangle {
     private double a;
     private double b;

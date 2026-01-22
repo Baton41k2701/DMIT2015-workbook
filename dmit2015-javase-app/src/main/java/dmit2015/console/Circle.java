@@ -7,7 +7,7 @@ package dmit2015.console;
  * @version 2026.01.14
  */
 
-public class Circle {
+public class Circle implements Shape {
     // defining a field
     private double radius;
     //defining getters and setters (fields)
@@ -32,6 +32,7 @@ public class Circle {
         setRadius(radius);
     }
 
+    @Override
     public  double getArea()
     {
         return Math.PI * radius * radius;
@@ -42,9 +43,7 @@ public class Circle {
         return 2 * radius;
     }
 
-    public  double getPerimeter()
-    {
-        return 2 * Math.PI * radius;
-    }
+    @Override
+    public  double getPerimeter() { return 2 * Math.PI * radius; }
 
 }
